@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sound</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffffff;
+        }
+        img {
+            max-width: 100vw;
+            max-height: 100vh;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 請將 my_image.jpg 與 my_sound.mp3 換成您的檔名 -->
+    <img src="S__11591693_0.jpg" onclick="let a=document.getElementById('audio'); a.currentTime=0; a.play();">
+    <audio id="audio" src="村民.mp3" preload="auto"></audio>
+
+</body>
+</html>
